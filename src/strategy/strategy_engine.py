@@ -242,7 +242,21 @@ class TradingStrategy:
         # Check if we already have a position in this ticker
         has_position = False
         if current_positions:
-            has_position = any(p['ticker'] == ticker for p in current_positions)
+            for position in current_positions:
+                # Support multiple position shapes (dict, dataclass, str ticker)
+                if isinstance(position, str):
+                    if position == ticker:
+                        has_position = True
+                        break
+                elif isinstance(position, dict):
+                    if position.get('ticker') == ticker:
+                        has_position = True
+                        break
+                else:
+                    ticker_attr = getattr(position, 'ticker', None)
+                    if ticker_attr == ticker:
+                        has_position = True
+                        break
 
         # Only generate buy signals if we don't have a position
         if not has_position:

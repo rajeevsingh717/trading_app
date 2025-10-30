@@ -1,0 +1,198 @@
+2025-10-30 15:25:15 | INFO     | monitoring.logger | ============================================================
+2025-10-30 15:25:15 | INFO     | monitoring.logger | Trading System Logging Initialized
+2025-10-30 15:25:15 | INFO     | monitoring.logger | Log Directory: /Users/rajeevsingh/github/trading_app/logs/2025-10-30
+2025-10-30 15:25:15 | INFO     | monitoring.logger | Log Level: INFO
+2025-10-30 15:25:15 | INFO     | monitoring.logger | ============================================================
+2025-10-30 15:25:15 | INFO     | __main__ | ============================================================
+2025-10-30 15:25:15 | INFO     | __main__ | Starting Simple Backtest Example
+2025-10-30 15:25:15 | INFO     | __main__ | ============================================================
+2025-10-30 15:25:15 | INFO     | __main__ | Testing strategy on: AAPL, MSFT, GOOGL
+2025-10-30 15:25:15 | INFO     | __main__ | 
+Collecting historical data...
+2025-10-30 15:25:15 | INFO     | __main__ | Fetching AAPL...
+2025-10-30 15:25:15 | INFO     | data.data_collector | Fetching AAPL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 15:25:15 | INFO     | yfinance | Failed to create TzCache, reason: Error creating TzCache folder: '/Users/rajeevsingh/Library/Caches/py-yfinance' reason: [Errno 1] Operation not permitted: '/Users/rajeevsingh/Library/Caches/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2025-10-30 15:25:15 | INFO     | yfinance | Failed to create CookieCache, reason: Error creating CookieCache folder: '/Users/rajeevsingh/Library/Caches/py-yfinance' reason: [Errno 1] Operation not permitted: '/Users/rajeevsingh/Library/Caches/py-yfinance'. CookieCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2025-10-30 15:25:15 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:15 | ERROR    | data.data_collector | Error fetching AAPL (attempt 1): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:16 | INFO     | data.data_collector | Fetching AAPL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 2)
+2025-10-30 15:25:16 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:16 | ERROR    | data.data_collector | Error fetching AAPL (attempt 2): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:18 | INFO     | data.data_collector | Fetching AAPL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 3)
+2025-10-30 15:25:18 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:18 | ERROR    | yfinance | $AAPL: possibly delisted; no timezone found
+2025-10-30 15:25:18 | WARNING  | data.data_collector | No data returned for AAPL
+2025-10-30 15:25:18 | WARNING  | __main__ |   No data for AAPL
+2025-10-30 15:25:18 | INFO     | __main__ | Fetching MSFT...
+2025-10-30 15:25:18 | INFO     | data.data_collector | Fetching MSFT data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 15:25:18 | ERROR    | yfinance | Failed to get ticker 'MSFT' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:18 | ERROR    | yfinance | $MSFT: possibly delisted; no timezone found
+2025-10-30 15:25:18 | WARNING  | data.data_collector | No data returned for MSFT
+2025-10-30 15:25:18 | WARNING  | __main__ |   No data for MSFT
+2025-10-30 15:25:18 | INFO     | __main__ | Fetching GOOGL...
+2025-10-30 15:25:18 | INFO     | data.data_collector | Fetching GOOGL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 15:25:18 | ERROR    | yfinance | Failed to get ticker 'GOOGL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:18 | ERROR    | yfinance | $GOOGL: possibly delisted; no timezone found
+2025-10-30 15:25:18 | WARNING  | data.data_collector | No data returned for GOOGL
+2025-10-30 15:25:18 | WARNING  | __main__ |   No data for GOOGL
+2025-10-30 15:25:18 | ERROR    | __main__ | No data collected. Exiting.
+2025-10-30 15:32:24 | INFO     | monitoring.logger | ============================================================
+2025-10-30 15:32:24 | INFO     | monitoring.logger | Trading System Logging Initialized
+2025-10-30 15:32:24 | INFO     | monitoring.logger | Log Directory: /Users/rajeevsingh/github/trading_app/logs/2025-10-30
+2025-10-30 15:32:24 | INFO     | monitoring.logger | Log Level: INFO
+2025-10-30 15:32:24 | INFO     | monitoring.logger | ============================================================
+2025-10-30 15:32:24 | INFO     | __main__ | ============================================================
+2025-10-30 15:32:24 | INFO     | __main__ | Starting Simple Backtest Example
+2025-10-30 15:32:24 | INFO     | __main__ | ============================================================
+2025-10-30 15:32:24 | INFO     | __main__ | Testing strategy on: AAPL, MSFT, GOOGL
+2025-10-30 15:32:24 | INFO     | __main__ | 
+Collecting historical data...
+2025-10-30 15:32:24 | INFO     | __main__ | Fetching AAPL...
+2025-10-30 15:32:24 | INFO     | data.data_collector | Fetching AAPL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 15:32:24 | INFO     | yfinance | Failed to create TzCache, reason: Error creating TzCache folder: '/Users/rajeevsingh/Library/Caches/py-yfinance' reason: [Errno 1] Operation not permitted: '/Users/rajeevsingh/Library/Caches/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2025-10-30 15:32:24 | INFO     | yfinance | Failed to create CookieCache, reason: Error creating CookieCache folder: '/Users/rajeevsingh/Library/Caches/py-yfinance' reason: [Errno 1] Operation not permitted: '/Users/rajeevsingh/Library/Caches/py-yfinance'. CookieCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2025-10-30 15:32:24 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:24 | ERROR    | data.data_collector | Error fetching AAPL (attempt 1): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:25 | INFO     | data.data_collector | Fetching AAPL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 2)
+2025-10-30 15:32:25 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:25 | ERROR    | data.data_collector | Error fetching AAPL (attempt 2): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:27 | INFO     | data.data_collector | Fetching AAPL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 3)
+2025-10-30 15:32:27 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:27 | ERROR    | yfinance | $AAPL: possibly delisted; no timezone found
+2025-10-30 15:32:27 | WARNING  | data.data_collector | No data returned for AAPL
+2025-10-30 15:32:27 | WARNING  | __main__ |   Falling back to sample data for AAPL (/Users/rajeevsingh/github/trading_app/examples/sample_data/AAPL_5m.csv)
+2025-10-30 15:32:27 | INFO     | utils.indicators | Added all technical indicators to DataFrame
+2025-10-30 15:32:27 | INFO     | __main__ |   Loaded 240 bars for AAPL
+2025-10-30 15:32:27 | INFO     | __main__ | Fetching MSFT...
+2025-10-30 15:32:27 | INFO     | data.data_collector | Fetching MSFT data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 15:32:27 | ERROR    | yfinance | Failed to get ticker 'MSFT' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:27 | ERROR    | yfinance | $MSFT: possibly delisted; no timezone found
+2025-10-30 15:32:27 | WARNING  | data.data_collector | No data returned for MSFT
+2025-10-30 15:32:27 | WARNING  | __main__ |   Falling back to sample data for MSFT (/Users/rajeevsingh/github/trading_app/examples/sample_data/MSFT_5m.csv)
+2025-10-30 15:32:27 | INFO     | utils.indicators | Added all technical indicators to DataFrame
+2025-10-30 15:32:27 | INFO     | __main__ |   Loaded 240 bars for MSFT
+2025-10-30 15:32:27 | INFO     | __main__ | Fetching GOOGL...
+2025-10-30 15:32:27 | INFO     | data.data_collector | Fetching GOOGL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 15:32:27 | ERROR    | yfinance | Failed to get ticker 'GOOGL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:27 | ERROR    | yfinance | $GOOGL: possibly delisted; no timezone found
+2025-10-30 15:32:27 | WARNING  | data.data_collector | No data returned for GOOGL
+2025-10-30 15:32:27 | WARNING  | __main__ |   Falling back to sample data for GOOGL (/Users/rajeevsingh/github/trading_app/examples/sample_data/GOOGL_5m.csv)
+2025-10-30 15:32:27 | INFO     | utils.indicators | Added all technical indicators to DataFrame
+2025-10-30 15:32:27 | INFO     | __main__ |   Loaded 240 bars for GOOGL
+2025-10-30 15:32:27 | INFO     | __main__ | 
+============================================================
+2025-10-30 15:32:27 | INFO     | __main__ | Running Backtest Simulation
+2025-10-30 15:32:27 | INFO     | __main__ | ============================================================
+2025-10-30 15:32:27 | INFO     | __main__ | Simulating 240 time periods...
+2025-10-30 15:32:28 | INFO     | strategy.strategy_engine | Generated BUY signal: Signal(BUY MSFT @ $177.28 - Above SMA | RSI 62.5 | Vol 1.65x | ATR 0.82)
+2025-10-30 15:32:28 | INFO     | backtest.backtest_engine | OPEN MSFT: 5 shares @ $177.37 (SL: $175.51, TP: $179.94)
+2025-10-30 15:32:56 | INFO     | monitoring.logger | ============================================================
+2025-10-30 15:32:56 | INFO     | monitoring.logger | Trading System Logging Initialized
+2025-10-30 15:32:56 | INFO     | monitoring.logger | Log Directory: /Users/rajeevsingh/github/trading_app/logs/2025-10-30
+2025-10-30 15:32:56 | INFO     | monitoring.logger | Log Level: INFO
+2025-10-30 15:32:56 | INFO     | monitoring.logger | ============================================================
+2025-10-30 15:32:56 | INFO     | __main__ | ============================================================
+2025-10-30 15:32:56 | INFO     | __main__ | Starting Simple Backtest Example
+2025-10-30 15:32:56 | INFO     | __main__ | ============================================================
+2025-10-30 15:32:56 | INFO     | __main__ | Testing strategy on: AAPL, MSFT, GOOGL
+2025-10-30 15:32:56 | INFO     | __main__ | 
+Collecting historical data...
+2025-10-30 15:32:56 | INFO     | __main__ | Fetching AAPL...
+2025-10-30 15:32:56 | INFO     | data.data_collector | Fetching AAPL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 15:32:56 | INFO     | yfinance | Failed to create TzCache, reason: Error creating TzCache folder: '/Users/rajeevsingh/Library/Caches/py-yfinance' reason: [Errno 1] Operation not permitted: '/Users/rajeevsingh/Library/Caches/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2025-10-30 15:32:56 | INFO     | yfinance | Failed to create CookieCache, reason: Error creating CookieCache folder: '/Users/rajeevsingh/Library/Caches/py-yfinance' reason: [Errno 1] Operation not permitted: '/Users/rajeevsingh/Library/Caches/py-yfinance'. CookieCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2025-10-30 15:32:56 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:56 | ERROR    | data.data_collector | Error fetching AAPL (attempt 1): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:57 | INFO     | data.data_collector | Fetching AAPL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 2)
+2025-10-30 15:32:57 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:57 | ERROR    | data.data_collector | Error fetching AAPL (attempt 2): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:59 | INFO     | data.data_collector | Fetching AAPL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 3)
+2025-10-30 15:32:59 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:59 | ERROR    | yfinance | $AAPL: possibly delisted; no timezone found
+2025-10-30 15:32:59 | WARNING  | data.data_collector | No data returned for AAPL
+2025-10-30 15:32:59 | WARNING  | __main__ |   Falling back to sample data for AAPL (/Users/rajeevsingh/github/trading_app/examples/sample_data/AAPL_5m.csv)
+2025-10-30 15:32:59 | INFO     | utils.indicators | Added all technical indicators to DataFrame
+2025-10-30 15:32:59 | INFO     | __main__ |   Loaded 240 bars for AAPL
+2025-10-30 15:32:59 | INFO     | __main__ | Fetching MSFT...
+2025-10-30 15:32:59 | INFO     | data.data_collector | Fetching MSFT data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 15:32:59 | ERROR    | yfinance | Failed to get ticker 'MSFT' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:59 | ERROR    | yfinance | $MSFT: possibly delisted; no timezone found
+2025-10-30 15:32:59 | WARNING  | data.data_collector | No data returned for MSFT
+2025-10-30 15:32:59 | WARNING  | __main__ |   Falling back to sample data for MSFT (/Users/rajeevsingh/github/trading_app/examples/sample_data/MSFT_5m.csv)
+2025-10-30 15:32:59 | INFO     | utils.indicators | Added all technical indicators to DataFrame
+2025-10-30 15:32:59 | INFO     | __main__ |   Loaded 240 bars for MSFT
+2025-10-30 15:32:59 | INFO     | __main__ | Fetching GOOGL...
+2025-10-30 15:32:59 | INFO     | data.data_collector | Fetching GOOGL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 15:32:59 | ERROR    | yfinance | Failed to get ticker 'GOOGL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:59 | ERROR    | yfinance | $GOOGL: possibly delisted; no timezone found
+2025-10-30 15:32:59 | WARNING  | data.data_collector | No data returned for GOOGL
+2025-10-30 15:32:59 | WARNING  | __main__ |   Falling back to sample data for GOOGL (/Users/rajeevsingh/github/trading_app/examples/sample_data/GOOGL_5m.csv)
+2025-10-30 15:32:59 | INFO     | utils.indicators | Added all technical indicators to DataFrame
+2025-10-30 15:32:59 | INFO     | __main__ |   Loaded 240 bars for GOOGL
+2025-10-30 15:32:59 | INFO     | __main__ | 
+============================================================
+2025-10-30 15:32:59 | INFO     | __main__ | Running Backtest Simulation
+2025-10-30 15:32:59 | INFO     | __main__ | ============================================================
+2025-10-30 15:32:59 | INFO     | __main__ | Simulating 240 time periods...
+2025-10-30 15:32:59 | INFO     | strategy.strategy_engine | Generated BUY signal: Signal(BUY MSFT @ $177.28 - Above SMA | RSI 62.5 | Vol 1.65x | ATR 0.82)
+2025-10-30 15:32:59 | INFO     | backtest.backtest_engine | OPEN MSFT: 5 shares @ $177.37 (SL: $175.51, TP: $179.94)
+2025-10-30 15:32:59 | INFO     | backtest.backtest_engine | CLOSE MSFT: 5 shares @ $178.51 | P&L: $5.71 (+0.64%) | Time Stop (EOD close, 0.69%)
+2025-10-30 15:32:59 | INFO     | __main__ | 
+Closing remaining positions...
+2025-10-30 15:32:59 | INFO     | __main__ | 
+============================================================
+2025-10-30 15:32:59 | INFO     | __main__ | Backtest Results
+2025-10-30 15:32:59 | INFO     | __main__ | ============================================================
+2025-10-30 15:32:59 | INFO     | __main__ | 
+Backtest completed successfully!
+2025-10-30 16:26:11 | INFO     | monitoring.logger | ============================================================
+2025-10-30 16:26:11 | INFO     | monitoring.logger | Trading System Logging Initialized
+2025-10-30 16:26:11 | INFO     | monitoring.logger | Log Directory: /Users/rajeevsingh/github/trading_app/logs/2025-10-30
+2025-10-30 16:26:11 | INFO     | monitoring.logger | Log Level: INFO
+2025-10-30 16:26:11 | INFO     | monitoring.logger | ============================================================
+2025-10-30 16:26:11 | INFO     | __main__ | ============================================================
+2025-10-30 16:26:11 | INFO     | __main__ | Starting Simple Backtest Example
+2025-10-30 16:26:11 | INFO     | __main__ | ============================================================
+2025-10-30 16:26:11 | INFO     | __main__ | Testing strategy on: AAPL, MSFT, GOOGL
+2025-10-30 16:26:11 | INFO     | __main__ | 
+Collecting historical data...
+2025-10-30 16:26:11 | INFO     | __main__ | Fetching AAPL...
+2025-10-30 16:26:11 | INFO     | data.data_collector | Fetching AAPL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 16:26:12 | INFO     | data.data_collector | Successfully fetched 390 rows for AAPL
+2025-10-30 16:26:12 | INFO     | utils.indicators | Added all technical indicators to DataFrame
+2025-10-30 16:26:12 | INFO     | __main__ |   Loaded 390 bars for AAPL
+2025-10-30 16:26:12 | INFO     | __main__ | Fetching MSFT...
+2025-10-30 16:26:12 | INFO     | data.data_collector | Fetching MSFT data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 16:26:12 | INFO     | data.data_collector | Successfully fetched 390 rows for MSFT
+2025-10-30 16:26:12 | INFO     | utils.indicators | Added all technical indicators to DataFrame
+2025-10-30 16:26:12 | INFO     | __main__ |   Loaded 390 bars for MSFT
+2025-10-30 16:26:12 | INFO     | __main__ | Fetching GOOGL...
+2025-10-30 16:26:12 | INFO     | data.data_collector | Fetching GOOGL data from 2025-10-23 to 2025-10-30 (interval: 5m, attempt: 1)
+2025-10-30 16:26:12 | INFO     | data.data_collector | Successfully fetched 390 rows for GOOGL
+2025-10-30 16:26:12 | INFO     | utils.indicators | Added all technical indicators to DataFrame
+2025-10-30 16:26:12 | INFO     | __main__ |   Loaded 390 bars for GOOGL
+2025-10-30 16:26:12 | INFO     | __main__ | 
+============================================================
+2025-10-30 16:26:12 | INFO     | __main__ | Running Backtest Simulation
+2025-10-30 16:26:12 | INFO     | __main__ | ============================================================
+2025-10-30 16:26:12 | INFO     | __main__ | Simulating 390 time periods...
+2025-10-30 16:26:12 | INFO     | strategy.strategy_engine | Generated BUY signal: Signal(BUY GOOGL @ $266.54 - Above SMA | RSI 65.7 | Vol 1.34x | ATR 0.53)
+2025-10-30 16:26:12 | INFO     | backtest.backtest_engine | OPEN GOOGL: 3 shares @ $266.67 (SL: $263.87, TP: $270.54)
+2025-10-30 16:26:12 | INFO     | backtest.backtest_engine | CLOSE GOOGL: 3 shares @ $269.14 | P&L: $7.39 (+0.92%) | Time Stop (EOD close, 0.97%)
+2025-10-30 16:26:12 | INFO     | strategy.strategy_engine | Generated BUY signal: Signal(BUY AAPL @ $269.43 - Above SMA | RSI 43.7 | Vol 2.11x | ATR 0.56)
+2025-10-30 16:26:12 | INFO     | backtest.backtest_engine | OPEN AAPL: 3 shares @ $269.56 (SL: $266.74, TP: $273.47)
+2025-10-30 16:26:12 | INFO     | strategy.strategy_engine | Generated BUY signal: Signal(BUY GOOGL @ $273.00 - Above SMA | RSI 49.2 | Vol 1.30x | ATR 0.68)
+2025-10-30 16:26:12 | INFO     | backtest.backtest_engine | OPEN GOOGL: 3 shares @ $273.14 (SL: $270.27, TP: $277.09)
+2025-10-30 16:26:12 | INFO     | backtest.backtest_engine | CLOSE AAPL: 3 shares @ $269.60 | P&L: $0.09 (+0.01%) | Time Stop (EOD close, 0.06%)
+2025-10-30 16:26:12 | INFO     | backtest.backtest_engine | CLOSE GOOGL: 3 shares @ $274.90 | P&L: $5.30 (+0.65%) | Time Stop (EOD close, 0.70%)
+2025-10-30 16:26:12 | INFO     | strategy.strategy_engine | Generated BUY signal: Signal(BUY GOOGL @ $288.79 - Above SMA | RSI 46.7 | Vol 1.38x | ATR 1.30)
+2025-10-30 16:26:12 | INFO     | backtest.backtest_engine | OPEN GOOGL: 3 shares @ $288.93 (SL: $285.90, TP: $293.12)
+2025-10-30 16:26:12 | INFO     | backtest.backtest_engine | CLOSE GOOGL: 3 shares @ $285.86 | P&L: $-9.23 (-1.07%) | Stop Loss ($286.00, -1.02%)
+2025-10-30 16:26:12 | INFO     | __main__ | 
+Closing remaining positions...
+2025-10-30 16:26:12 | INFO     | __main__ | 
+============================================================
+2025-10-30 16:26:12 | INFO     | __main__ | Backtest Results
+2025-10-30 16:26:12 | INFO     | __main__ | ============================================================
+2025-10-30 16:26:12 | INFO     | __main__ | 
+Backtest completed successfully!
