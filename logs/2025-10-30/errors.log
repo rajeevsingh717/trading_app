@@ -1,0 +1,31 @@
+2025-10-30 15:25:15 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:15 | ERROR    | data.data_collector | Error fetching AAPL (attempt 1): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:16 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:16 | ERROR    | data.data_collector | Error fetching AAPL (attempt 2): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:18 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:18 | ERROR    | yfinance | $AAPL: possibly delisted; no timezone found
+2025-10-30 15:25:18 | ERROR    | yfinance | Failed to get ticker 'MSFT' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:18 | ERROR    | yfinance | $MSFT: possibly delisted; no timezone found
+2025-10-30 15:25:18 | ERROR    | yfinance | Failed to get ticker 'GOOGL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:25:18 | ERROR    | yfinance | $GOOGL: possibly delisted; no timezone found
+2025-10-30 15:25:18 | ERROR    | __main__ | No data collected. Exiting.
+2025-10-30 15:32:24 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:24 | ERROR    | data.data_collector | Error fetching AAPL (attempt 1): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:25 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:25 | ERROR    | data.data_collector | Error fetching AAPL (attempt 2): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:27 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:27 | ERROR    | yfinance | $AAPL: possibly delisted; no timezone found
+2025-10-30 15:32:27 | ERROR    | yfinance | Failed to get ticker 'MSFT' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:27 | ERROR    | yfinance | $MSFT: possibly delisted; no timezone found
+2025-10-30 15:32:27 | ERROR    | yfinance | Failed to get ticker 'GOOGL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:27 | ERROR    | yfinance | $GOOGL: possibly delisted; no timezone found
+2025-10-30 15:32:56 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:56 | ERROR    | data.data_collector | Error fetching AAPL (attempt 1): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:57 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:57 | ERROR    | data.data_collector | Error fetching AAPL (attempt 2): Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:59 | ERROR    | yfinance | Failed to get ticker 'AAPL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:59 | ERROR    | yfinance | $AAPL: possibly delisted; no timezone found
+2025-10-30 15:32:59 | ERROR    | yfinance | Failed to get ticker 'MSFT' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:59 | ERROR    | yfinance | $MSFT: possibly delisted; no timezone found
+2025-10-30 15:32:59 | ERROR    | yfinance | Failed to get ticker 'GOOGL' reason: Failed to perform, curl: (6) Could not resolve host: guce.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-30 15:32:59 | ERROR    | yfinance | $GOOGL: possibly delisted; no timezone found

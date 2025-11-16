@@ -5,9 +5,12 @@ Demonstrates how to run a basic backtest of the trading strategy.
 import sys
 from pathlib import Path
 from datetime import datetime, timedelta
+from typing import Optional
 
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
+
+import pandas as pd
 
 from data.data_collector import DataCollector
 from data.database import DatabaseManager
@@ -15,6 +18,21 @@ from utils.indicators import calculate_indicators
 from strategy.strategy_engine import TradingStrategy
 from backtest.backtest_engine import BacktestEngine, BacktestConfig
 from monitoring.logger import setup_logging
+
+
+SAMPLE_DATA_DIR = Path(__file__).parent / "sample_data"
+
+
+def load_sample_data(ticker: str, interval: str, logger) -> Optional[pd.DataFrame]:
+    """Load offline sample data if available."""
+    sample_path = SAMPLE_DATA_DIR / f"{ticker}_{interval}.csv"
+    if not sample_path.exists():
+        return None
+
+    logger.warning(f"  Falling back to sample data for {ticker} ({sample_path})")
+    df = pd.read_csv(sample_path, parse_dates=["timestamp"])
+    return df
+
 
 def run_simple_backtest():
     """Run a simple backtest on a few stocks."""
@@ -55,6 +73,9 @@ def run_simple_backtest():
             end_date=end_date,
             interval='5m'
         )
+
+        if (df is None or df.empty) and SAMPLE_DATA_DIR.exists():
+            df = load_sample_data(ticker, '5m', logger)
 
         if df is not None and not df.empty:
             # Calculate indicators
